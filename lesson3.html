@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание формы</title>
+</head>
+<body>
+    <h1>Урок3</h1>
+    <h2>Создание формы</h2>
+    <h3>"Регистрация пользователя"</h3>
+    <p>Форма объявляется парным тегом "form" - "/form"</p>
+    <p>Атрибут required делает поле обязательным для заполнения</p>
+            <label for="search">Поиск</label>
+            <input id="search" type="search" name="search" placeholder="Найти:"/>
+    <p></p>
+    <label for="sound-volume">Громкость звука (от 1 до 100)</label>
+    <input type="range" id="sound-volume" name="sound-volume" min="1" max="100"/>
+    <p></p>
+    <label for="color">Выберите цвет интерфейса</label>
+    <input type="color" name="color" id="color"/>
+    <p></p>
+    <form id="signup" name="signup" action="#" method="post">
+        <div>
+            <fieldset>
+            <label for="login">Введите логин:</label>
+            <input id="login" type="text" name="username" placeholder="Введите логин:" value="Ильдар" size="20"/>
+            </fieldset>
+        </div>
+        <p></p>
+        <div>
+            <label for="email">Введите электронную почту:</label>
+            <input form="signup" id="email" type="email" name="email" placeholder="Введите E-mail:"/>
+        </div>
+        <p></p>
+        <div>
+            <label for="tel">Введите номер телефона</label>
+            <input id="tel" type="tel" name="tel" placeholder="Номер телефона:"/>
+        </div>
+        <p></p>
+        <div>
+            <label for="parol" recuired>Введите пароль:</label>
+            <input id="parol" type="password" name="password" 
+            placeholder="Введите пароль:" minlength="8" maxlength="16" 
+            pattern="[a-zA-Z]+" oninvalid=""/>
+            <button type="button">Иконка с глазом</button>
+        </div>
+        <p></p>
+        <div>
+            <label for="user-profile">Ссылка на профиль в любой соц. сети:</label>
+            <input id="user-profile" name="user-profile" type="url" placeholder="Ссылка на профиль"/>
+        </div>
+        <p></p>
+        <div>
+            <label for="date-time">Укажите дату в формате: день, месяц, год, время:</label>
+            <input id="date-time" name="date-time" type="datetime-local"/>
+        </div>
+        <p></p>
+        <div>
+        <fieldset>
+            <legend>Укажите пол</legend>
+            <p></p>
+            <input id="male" type="radio" name="gender" value="male"/>
+            <label for="male">Муж.</label>
+            <p></p>
+            <input id="female" type="radio" name="gender" value="female"/>
+            <label for="female">Жен.</label>
+        </fieldset>
+        </div>
+        <p></p>
+        <div>
+            <label for="avatar">Загрузите фото</label>
+            <input id="avatar" type="file" name="avatar">
+        </div>
+        <p></p>
+        <div>
+            <label for="files">Загрузите файлы</label>
+            <input type="file" name="files" id="files" multiple>  
+        </div>
+        <p></p>
+        <div>
+            <label for="year">Год рождения</label>
+            <select id="year" name="year" required>
+                <option disabled value="0" selected>не выбрано</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+            </select>
+        </div>
+        </form>
+        <p></p>
+        <div>
+            <label for="number">Полных лет:</label>
+            <input id="number" name="number" type="number" placeholder="Не выбрано"/>
+        </div>
+        <p></p>
+        <form>
+        <div>
+            <label for="country">Ваш город:</label>
+            <select id="country" name="country" multiple size="5">
+                <option value="Волгоград">Волгоград</option>
+                <option value="Екатеринбург">Екатеринбург</option>
+                <option value="Казань">Казань</option>
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+            </select>
+        </div>
+        <p></p>
+        <div>
+            <label for="street">Выберите улицу</label>
+            <select id="street" name="street">
+                <optgroup label="Квартал">
+                <option value="k1">Ямашева</option>
+                <option value="k2">Мусина</option>
+                <option value="k3" selected>Амирхана</option>
+                </optgroup>
+                <optgroup label="Авиастрой">
+                <option value="a1">Лукина</option>
+                <option value="a2">Максимова</option>
+                <option value="a3">Побежимова</option>
+                </optgroup>
+            </select>
+        </div>
+        <p></p>
+        <div>
+                <p>wrap "soft", spellcheck="true"</p>
+                <legend for="comment">Ваш комментарий:</legend>
+                <textarea name="comment" id="comment" cols="30" rows="10"
+                placeholder="Введите текст сообщения:" spellcheck="true" wrap="soft"></textarea>
+                <button type="button">Cохранить</button>
+                <p>wrap "hard", spellcheck="false"</p>
+                <legend for="comment">Ваш комментарий:</legend>
+                <textarea name="comment" id="comment" cols="30" rows="10"
+                placeholder="Введите текст сообщения:" spellcheck="false" wrap="hard"></textarea>
+                <button type="button">Cохранить</button>
+        </div>
+        <p></p>
+        <div>
+        <label for="rules">Я ознакомлен и согласен с правилами</label>
+            <input id=rules type="checkbox" name="rules" value="rules" checked/>
+        </div>
+        <p></p>
+        <div>
+        <input type="submit" name="signup" value="Зарегистрироваться"/>
+        </div>
+        <p></p>
+        <button type="submit" name="signup" value="Зарегистрироваться" autofocus>Зарегистрироваться</button>
+        <p></p>
+        <button type="reset">Сбросить</button>
+    </form>
+    <p></p>
+    <form name="appeal" action="#" method="post">
+        <div>
+            <label for="appeal-number">Ваш номер обращения:</label>
+            <input id="appeal-number" name="appeal-number" value="1234567890" readonly/>
+        </div>
+    </form>
+    <p></p>
+    <form name="fields" action="#" method="post" novalidate>
+        <div>
+            <label for="field-1">Стандартная экранная клавиатура:</label>
+            <input id="field-1" name="field-1" inputmode="text"/>
+            <p></p>
+            <label for="field-2">Экранная клавиатура не появится вовсе:</label>
+            <input id="field-2" name="field-2" inputmode="none"/>
+            <p></p>
+            <label for="field-3">Экранная клавиатура с цифрами:</label>
+            <input id="field-3" name="field-3" inputmode="numeric"/>
+            <p></p>
+            <label for="field-4">Экранная клавиатура с цифрами и разделителем:</label>
+            <input id="field-4" name="field-4" inputmode="decimal"/>
+            <p></p>
+            <label for="field-5">Экранная клавиатура с цифрами и символами для ввода номера телефона:</label>
+            <input id="field-5" name="field-5" inputmode="tel"/>
+            <p></p>
+            <label for="field-6">Экранная клавиатура для удобного ввода электронной почты:</label>
+            <input id="field-6" name="field-6" inputmode="email" autocomplete="on"/>
+            <p></p>
+            <label for="field-7">Экранная клавиатура с кнопкой поиска:</label>
+            <input id="field-7" name="field-7" inputmode="search"/>
+            <p></p>
+            <label for="field-8">Экранная клавиатура для удобного ввода url:</label>
+            <input id="field-8" name="field-8" inputmode="url"/>
+        </div>
+    </form>
+    <p>Справочные сайты: mdn, doka.guide</p>
+</body>
+</html>

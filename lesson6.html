@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Урок1</title>
+    <link rel="stylesheet" type="text/css" href="../lessons css/lesson6.css">
+</head>
+<body>
+    <h1>Управление блоками через атрибуты class, id, data-*</h1>
+    <div id="exmpl1">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Voluptatibus tempore eos dicta repellat suscipit consequuntur!</span> </p> 
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum, dolore dicta accusantium assumenda ratione!</p>
+    </div>
+    <div class="mainBox">
+        <div class="box boxRed">
+            <p>Красный</p>
+        </div>
+        <div class="box boxGreen">
+            <p>Зеленый</p>
+        </div>
+        <div class="box boxBlue">
+            <p>Синий</p>
+        </div>
+    </div>
+    <form id="signup" name="signup" action="#" method="post">
+        <div>
+            <fieldset>
+            <label for="login">Введите логин:</label>
+            <input id="login" type="text" name="username" placeholder="Введите логин:" value="Ильдар" size="20"/>
+            <button type="submit" name="signup" value="authorize" autofocus>Зарегистрироваться</button>
+            </fieldset>
+        </div>
+    </form>
+    <p data-text1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa a harum qui, doloribus sed debitis!</p>
+    <p data-text2="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, assumenda magni dicta error alias excepturi.</p>
+    <p data-text2="blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto natus, quasi accusamus dolore eum tempora.</p>
+</body>
+</html>

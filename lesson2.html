@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылки и таблицы</title>
+    <link rel="stylesheet" href="../lessons css/lesson2.css">
+</head>
+<html>
+    <h1>Урок 2</h1>
+    <h2>Ссылки, таблицы и блоки</h2>
+    <div>
+    <h3>Блоки</h3>
+    <p>
+        "div" - "/div" - парный блочный тег блока
+        "span" - "/span" - парный строчный тег
+    </p>
+    </div>
+    <div>
+    <h3>Ссылки</h3>
+        <a href="../lessons/lesson1.html">Мой первый урок по HTML</a>
+        <p><a href="https://www.google.com/" target="_blank">Сайт гугл, откроется в новой вкладке</a></p>
+        <p><a href="#tables">Ссылка на таблицы внизу страницы</a></p>
+        <p><a href="../lessons/lesson1.html"><img src="../Images/roses.jpg" alt="" width="480" height="320" title="Цветы"/></a></p>
+        <p><a href="../some/file1.txt" download>Скачать</a></p>
+        <p>Написать в поддержку:<a href="mailto:example@mail.com">example@mail.com</a></p>
+        <p>Связь с поддержкой:<a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+    </div>
+    <div>
+    <h3 id="tables">Таблицы</h3>
+    <p>Тег "thead" оборачивает верхнюю строку с легендой таблицы, которая дает пояснение о содержании в столбцах</p>
+    <table border="1" width="40%" height="50px">
+        <caption>Заголовок таблицы</caption>
+        <thead>
+        <tr>
+            <th colspan="3" align="">Main</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td align="left">(1,1)</td>
+            <td align="right">(1,2)</td>
+            <td align="center">(1,3)</td>
+        </tr>
+        <tr>
+            <td>(2,1)</td>
+            <td>(2,2)</td>
+            <td>(2,2)</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr height="100px">
+                <th>Result</th>
+                <td colspan="2" align="center">9999.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p></p>
+    <table border="1" width="40%" height="50px">
+        <tr>
+            <th colspan="2" align="">Theme</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Choise</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

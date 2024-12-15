@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео, аудио и фреймы</title>
+</head>
+<body>
+    <h1>Урок 4</h1>
+    <h2>Видео, аудио и фреймы</h2>
+    <h3>Видео</h3>
+    <p>Атрибут loop позволяет производить видео сразу после завершения</p>
+    <p>Атрибут autoplay позволяет сразу начать воспроизводить видео, а атрибут muted - производить его без звука</p>
+    <video src="../video/VIDEO1.MOV" poster="../Images/beach.jpg" controls loop width="960" height="640"></video>
+    <video
+    src="../video/VIDEO1.MOV"
+    controls
+    width="480"
+    height="320"
+    autoplay muted
+    ></video>
+    <p></p>
+    <video src="../video/VIDEO1.MOV" controls width="" height="480" laceinline></video>
+    <h3>Аудио</h3>
+    <audio src="../audio/AUDIO1.m4a" controls></audio>
+    <p>Атрибуты те же, что и для видео</p>
+    <h3>IFrame</h3>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5cc5b809a57b4e7b12917be66d92c2e878fd00f97a554c01f38fc472bb908471&amp;source=constructor" 
+    width="500" height="400" frameborder="0"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PL2TqBdz0I?si=4nQ45tG7rGYobHAG" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Фулбек подход</h2>
+    <video>
+        <source src="../video/VIDEO1.MOV" type="video/mdv">
+        <source src="../video/VIDEO1.mp4" type="video/mp4">
+        <p>К сожалению ваш браузер не поддерживает видео</p>
+    </video>
+</body>
+</html>
